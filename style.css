@@ -1,0 +1,266 @@
+:root{
+  --text-muted:#6D6D73;
+  --small-div-padding: 0.2em 0.5em;
+}
+*, *::before, *::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+outline: none;
+}
+
+*::-webkit-scrollbar {
+display: none;
+}
+
+html, body{
+overflow-x: hidden;
+overflow-y: auto;
+scrollbar-width: none;
+font-family: "Nata sans", sans-serif;
+height: 100%;
+-ms-overflow-style: none;
+}
+
+img{
+  background-size: cover;
+}
+.flex-col {
+display: flex;
+flex-direction: column;
+}
+
+.flex-row {
+display: flex;
+flex-direction: row;
+}
+.notLink{
+  color: inherit;
+  text-decoration: none;
+}
+body{
+  background-color: #1B1B1F;
+}
+header{
+  margin: 1em 1em;
+  color: #DFDFD6;
+  gap: 2.4em;
+  justify-content: space-between;
+}
+header .logoTxt {
+  gap: 1em;
+}
+
+i{
+  color: white;
+}
+.notAligned{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.versionDiv{
+  background-color: #161618;
+  color: #DFDFD6;
+  border-radius: 12px;
+  padding: 0.2em 0.5em;
+  font-size: large;
+}
+.F56565{
+  color: #F56565;
+}
+.centerTxt{
+  font-size: 2em;
+  font-weight: bolder;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+.C6D6D73{
+  color: #6D6D73;
+  font-size: large;
+  font-weight: normal;
+}
+.mainNav{
+  gap: 1em;
+  margin: 0 0.5em 0 0.5em;
+}
+.navDiv{
+  padding: 0.6em 1em;
+  border-radius: 30px;
+  flex: 0 0 0 auto;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 590;
+  background-color: #32363F;
+  color: #98989F;
+  font-size: inherit;
+  
+}
+.navDiv.active{
+  background-color: #F56565;
+    color: #FFFFFF;
+}
+.secView{
+  gap: 1em;
+  width: 100%;
+}
+.searchMenu{
+  background-color: #202127;
+  width: 100%;
+  gap: 1em;
+  border-radius: 12px;
+  padding: 0.9em 1em;
+}
+.diff1{
+  width: 86%;
+  margin: 0 0.5em 0 0.5em;
+  color: #98989F;
+  gap: 2em;
+}
+
+.otherNavDiv{
+  width: 100%;
+  gap: 1em;
+}
+.bold{
+  font-weight: bold;
+}
+.diff2{
+  gap: 1em;
+  padding: 0.9em 1em;
+  border-radius: 12px;
+  margin-right: auto;
+  background-color: #202127;
+  width: 100%;
+}
+.diff2 span{
+  color: #DFDFD6;
+}
+.DA5C5C{
+  background-color: #1B1B1F;
+  border-radius: 6px;
+  padding: 0.6em;
+  width: 45px;
+  height: 45px;
+  color: #DA5C5C;
+}
+span.muted{
+    color: #98989F;
+    font-weight: 340;
+    line-height: 1.6;
+}
+.availFor{
+  gap: 1.5em;
+  text-align: center;
+  font-size: large;
+  
+}
+.availFor span{
+font-weight: 550;
+}
+.availFor img{
+  width: 80%;
+}
+.diff3{
+  background-color: #32363F;
+  font-weight: 380;
+  color: var(--text-muted);
+}
+.diff4{
+  justify-content: space-between;
+  padding: .7em 0.5em;
+  color: #FFFFFF;
+}
+
+.muted.bold{
+  color: #98989F;
+  font-weight: 550;
+}
+.circle{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+}
+.diff5{
+  gap: 0.5em;
+  background-color: #2B2F36;
+  padding: 0.5em 0.7em;
+  color: #98989F;
+  border-radius: 8px;
+}
+img.copy{
+  width: 90%;
+}
+input.mainSearch[type="text"] {
+  width: 100%;
+  padding: var(--small-div-padding);
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  background-color: inherit;
+  border: none;
+}
+input.mainSearch[type="text"]::placeholder{
+  font-weight: 540;
+}
+.diff6{
+  width: 100%;
+}
+
+.styled-slider {
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #F56565 50%, #2B2F36 50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  outline: none;
+  
+  margin-top: 1em;
+}
+.styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+
+.styled-slider::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 20px;
+  width: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.styled-slider::-moz-range-progress {
+  background: #F56565;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.styled-slider::-moz-range-track {
+  background:#2B2F36 ;
+  height: 6px;
+  border-radius: 5px;
+}
+.diff7--baseline{
+  align-items: baseline;
+}
+.diff8--gap--0•7{
+  gap:.7em ;
+}
